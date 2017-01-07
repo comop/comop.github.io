@@ -4,15 +4,165 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
+    <title>web Sample</title>
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+    
+    header.jumbotron {
+      background: url("top_1.jpg");
+      background-position: center center;
+      background-size: cover;
+      color: #fff;
+    }
+  
+    header .midashi-btn {
+      border: 1px solid #fff;
+      color: #fff;
+      border-radius: 0;
+    }
+    
+    header .midashi-btn:hover {
+      color: #0089ff;
+      border-color: #0089ff;
+    }
+    
+    #nav {
+      margin-bottom: 0;
+    }
+
+    .navbar-form {
+      padding-right: 30px;
+    }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default navbar-static-top" id='nav'>
+     <div class="container">
+       
+        <div class="navbar-header">
+          <!--ブランド名 ロゴ名の表示-->
+          <a class="navbar-brand" href="https://comop.github.io/">COMO</a>
+          
+          <!--トグルボタンの設置-->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-content">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="nav-content" class="collapse navbar-collapse">
+    
+          <!--リンクのリスト メニューリスト-->
+          <ul class="nav navbar-nav">
+            <li><a href="#about">自己紹介</a></li>
+            <li><a href="#textbook">使用教材</a></li>
+            <li><a href="#schedule">進め方</a></li>
+            <li><a href="#limk">参考リンク</a></li>
+            <!--ドロップダウン化するliタグ-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" href="">Drop  <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#textbook">使用教材</a></li>
+                <li><a href="#schedule">進め方</a></li>
+                <li><a href="#limk">参考リンク</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!--検索フォーム-->
+              <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+        </div>
+    </div>
+  </nav>
+  <!-- ヘッダー部分 -->
+    <header class="jumbotron">
+      <div class="container">
+        <h1>web biginner</h1>
+        <p>8週間でwebアプリケーションを使いこなせるために</p>
+      </div>
+    </header>
+    
+  <div class="container">
+    <h1>Como's sample web site</h1>
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="#about"><img src="link1.png" alt="自己紹介"></a>
+        </div>
+        <div class="col-sm-3">
+          <a href="#textbook"><img src="link2.png" alt="使用教材"></a>
+        </div>
+        <div class="col-sm-3">
+          <a href="#schedule"><img src="link3.png" alt="進め方"></a>
+        </div>
+        <div class="col-sm-3">
+          <a href="#link"><img src="link4.png" alt="参考リンク"></a>
+        </div>
+      </div>
+      <div class="row">
+        <div id="about"><h3>自己紹介</h3>
+          <p>Yukiko Hamaguchi</p>
+          <p>東京出身。webサイトを作ってみたいと思い、勉強始めました。</p>
+        </div>
+        <br>
+        <br>
+        <div id="textbook"><h3>使用教材</h3>
+          <p>Techacademy webアプリケーション8週間コースを受講中</p>
+        </div>
+        <br>
+        <br>
+        <div id="schedule"><h3>進め方</h3>
+        　<p>1週目</p>  
+        　<ul>
+            <li>Lesson0：事前準備</li>
+            <li>Lesson1：HTML/CSS</li>
+            <li>Lesson2：Bootstrap</li>
+          </ul>
+          <p>2週目</p>
+          <ul>
+            <li>Lesson3：Git</li>
+            <li>Lesson4：ポートフォリオサイト</li>
+            <li>Lesson5：Ruby</li>
+          </ul>
+          <p>3週</p>
+          <ul>
+            <li>Lesson6：メッセージボード</li>
+          </ul>
+          <p>4週目</p>
+          <ul>
+            <li>Lesson7：Twitterクローン（途中まで）</li>
+          </ul>
+          <p>5週目</p>
+          <ul>
+            <li>Lesson7：Twitterクローン（完成）</li>
+            <li>Lesson8：モノリスト（途中まで）</li>
+          </ul>
+          <p>6週目</p>
+          <ul>
+            <li>Lesson8：モノリスト（完成）</li>
+          </ul>
+          <p>7週目/8週目</p>
+          <ul>
+            <li>Lesson9：オリジナルサービス</li>
+          </ul>
+        </div>  
+        <br>
+        <br>
+        <div id="link"><h3>参考リンク</h3>
+        <a href="https://techacademy.jp/magazine/">Techacademy magazine</a>
+        </div>
+      </div>
+  </div>
   </body>
 </html>
